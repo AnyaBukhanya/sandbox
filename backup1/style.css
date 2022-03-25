@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "poluustav";
+    src: url("./../theBestFontsEver/woffs/cyrillicold_[allfont.ru].woff");
+}
+
+@font-face {
+    font-family: "AcademyOld";
+    src: url("./../theBestFontsEver/woffs/Academy\ Old\ Regular.woff");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.blueparagraph {
+    color: rgb(39, 9, 5);
+    font-size: 36px;
+    font-family: 'AcademyOld';
+    margin: 0 auto;
+}
+
+.redparagraph {
+    color: red;
+    font-family: 'poluustav', Arial, sans-serif;
+    font-size: 48px;
+    text-align: center;
+}
+
+/* .fontSize {
+    font-size: 24px;
+} */
+
+.stikh {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 8s cubic-bezier(0.075, 0.82, 0.165, 1) all;
+}
+
+.stikh:hover {
+    background-color: grey;
+    transform: scale(1.4, 0.5) rotate(40deg) translateX(700px);
+    background-image: url("./котек.jpg");
+}
