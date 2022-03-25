@@ -1,11 +1,11 @@
 @font-face {
     font-family: "poluustav";
-    src: url("./../theBestFontsEver/woffs/cyrillicold_[allfont.ru].woff");
+    src: url("./woffs/cyrillicold_[allfont.ru].woff");
 }
 
 @font-face {
     font-family: "AcademyOld";
-    src: url("./../theBestFontsEver/woffs/Academy\ Old\ Regular.woff");
+    src: url("./woffs/Academy\ Old\ Regular.woff");
 }
 
 * {
