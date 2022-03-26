@@ -24,7 +24,7 @@
 
 .redparagraph {
     /* color: red; */
-    color: linear-gradient(grey, red);
+    color: red;
 
     font-family: 'poluustav', Arial, sans-serif;
     font-size: 48px;
