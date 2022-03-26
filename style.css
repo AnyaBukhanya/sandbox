@@ -23,7 +23,9 @@
 }
 
 .redparagraph {
-    color: red;
+    /* color: red; */
+    color: linear-gradient(grey, red);
+
     font-family: 'poluustav', Arial, sans-serif;
     font-size: 48px;
     text-align: center;
