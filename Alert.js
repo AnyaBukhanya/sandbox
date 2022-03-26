@@ -7,6 +7,8 @@
 
 let anb = document.querySelector(".redparagraph");
 let stikh = document.querySelector(".stikh");
+let buttonAdd = document.querySelector("#buttonadd");
+let input = document.querySelector("#input");
 
 let paragraphs = ["Не прилично ли будет нам, братия,", 
 "Начать древним складом",
@@ -25,3 +27,12 @@ for (let paragraph of paragraphs) {
     elem.addEventListener("click", () => {elem.parentNode.removeChild(elem)})
     stikh.appendChild(elem);
 }
+
+buttonAdd.addEventListener("click", () => {
+let elem = document.createElement("p");
+elem.className = "blueparagraph";
+elem.innerText = input.value;
+elem.addEventListener("click", () => {elem.parentNode.removeChild(elem)})
+stikh.appendChild(elem);
+input.value = ""
+})
