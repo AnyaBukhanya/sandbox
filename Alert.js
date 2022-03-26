@@ -25,12 +25,16 @@ for (let paragraph of paragraphs) {
     stikh.appendChild(elem);
 }
 
-buttonAdd.addEventListener("click", () => {
-let elem = document.createElement("p");
-elem.className = "blueparagraph";
-elem.innerText = input.value;
-elem.addEventListener("click", () => {elem.parentNode.removeChild(elem)})
-stikh.appendChild(elem);
-input.value = ""
-})
+function myScript(e) {
+console.log(e);
+e.preventDefault();
+if (input.value) {
+    let elem = document.createElement("p");
+    elem.className = "blueparagraph";
+    elem.innerText = input.value;
+    elem.addEventListener("click", () => {elem.parentNode.removeChild(elem)})
+    stikh.appendChild(elem);
+    input.value = ""    
+}
+}
 
